@@ -37,9 +37,12 @@ int main()
 {
 	//Shuffles the deck
 	Deck.shuffle();
-
+	//Draws one card
+	Hand = DrawOne(Hand);
+	//Fills the hand
 	Hand = FillHand(Hand);
-	Hand.Gethand();
+	//Asks for the current hand
+	std::vector<card> temp = Hand.Gethand();
 
 	std::cout << "Hello World!\n";
 }
